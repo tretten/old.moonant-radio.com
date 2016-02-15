@@ -158,7 +158,6 @@ img.sunday-live {
 	background: rgba(255,255,255,0.9);
 	z-index: 900;
 	bottom: 0px;
-	opacity: .85;
 	-webkit-transition: ease-out all 0.5s;
 	transition: ease-out all 0.5s;
 	padding: 15px 0 35px 0;
@@ -167,7 +166,7 @@ img.sunday-live {
 
 
 .footer:hover {
-	opacity: 1;
+	background: rgba(255,255,255,1);
 }
 
 /*_YShare */
