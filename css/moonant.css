@@ -146,6 +146,10 @@ img.sunday-live {
 	margin-bottom: 50px;
 }
 
+#disqus_thread {
+	padding: 20px 30px;
+}
+
 /*_Footer*/
 .footer {
 	position: fixed;
@@ -160,6 +164,7 @@ img.sunday-live {
 	opacity: .7;
 }
 
+
 .footer:hover {
 	opacity: 1;
 }
@@ -172,9 +177,9 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 
 /*_Player*/
 
-.player, #kast-wrapper, #kast.kast-transparent.kast-current, div#kast-top.kast-default-art {
+/*.player, #kast-wrapper, #kast.kast-transparent.kast-current, div#kast-top.kast-default-art {
 	min-height: 388px;
-}
+}*/
 
 transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar.kast-current.kast-custom-container.kast-offline {
 	z-index: 9;
