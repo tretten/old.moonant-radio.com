@@ -209,3 +209,7 @@ i.kast-mdi-album:before {
 i.kast-mdi.kast-mdi-album {
 	background-image: 
 }
+
+#kast-bar.kast-primary-dark {
+	display: none;
+}
