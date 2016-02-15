@@ -43,7 +43,7 @@
             unknownTrackText: 'Копмозиция', // Set unknown track text when error
             unknownArtistText: 'Исполнитель' // Set unknown artist text when error
         }, // Set text (Multi language support) @object
-        mobileCare: true, // low (aka true), medium, high, very high, ultra @boolean @array
+        mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
         irrelevantWords: ['feat.', 'ft.', 'Feat.', 'Ft.'], // irrelvant words in SHOUTcast full song title @false or @array
         overHTTPS: false, // Run SHOUTcast stream over an HTTPS proxy for HTTPS websites (experimental) (false) @boolean
         onReady: function () {}, // Kast event
