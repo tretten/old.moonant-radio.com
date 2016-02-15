@@ -217,5 +217,5 @@ i.kast-mdi.kast-mdi-album {
 /*_LikeBtns*/
 
 .likebtn-wrapper {
-	line-height: 10px;
+	line-height: 10px !important;
 }
