@@ -25,7 +25,7 @@ a:hover {
 
 dl {
 	list-style: none;
-	margin-bottom: 20px;
+	margin-bottom: 1.1em;
 }
 
 strong {
@@ -68,8 +68,16 @@ hr {
 	margin-top: 0;
 }
 
+.hero-content {
+	padding: 0;
+}
+
 .hero {
 	background: none;
+}
+
+.container {
+	margin: 0 auto;
 }
 
 .button.is-primary {
@@ -161,7 +169,6 @@ img.sunday-live {
 	-webkit-transition: ease-out all 0.5s;
 	transition: ease-out all 0.5s;
 	padding: 15px 0 35px 0;
-	opacity: .7;
 }
 
 
@@ -197,6 +204,18 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
+}
+
+#kast-np-title {
+	padding-top: 7px;
+}
+
+#kast-np-artist {
+	padding-top: 15px;
+}
+
+#kast-top-content {
+	background: rgba(255, 255, 255, 0.4);
 }
 
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
