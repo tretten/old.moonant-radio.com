@@ -2,7 +2,7 @@ var current_song = null;
 function myWrite(msg){
     if (current_song != msg){
         var heart = '<span class="likebtn-wrapper" data-white_label="true" data-theme="custom" data-btn_size="16" data-icon_size="16" data-icon_l_c="#bdbdbd" data-icon_l_c_v="#00a8ab" data-icon_d_c_v="#c7254e" data-bg_c="rgba(0,0,0,0)" data-brdr_c="rgba(0,0,0,0)" data-label_fs="r" data-lang="ru" data-identifier="' + msg + '" data-show_like_label="false" data-dislike_enabled="true" data-counter_show="false" data-popup_width="200" data-share_size="large" data-item_url="http://moon-ant.com" data-lazy_load="true" data-site_id="56b419bba4c688a213b13d5b"></span>';
-        $('#nowplay').html('В эфире: ♫ ' + heart + '<strong>'+msg+'</strong>&nbsp;&nbsp;<a class="button is-small" href="http://vk.com/audio?q=' + msg + '" target="_blank">VK</a> <a class="button is-small" href="https://www.youtube.com/results?search_query='+msg+'" target="_blank">Youtube</a>')
+        $('#nowplay').html('В эфире: ' + heart + '<strong>'+msg+'</strong>&nbsp;&nbsp;<a class="button is-small" href="http://vk.com/audio?q=' + msg + '" target="_blank">VK</a> <a class="button is-small" href="https://www.youtube.com/results?search_query='+msg+'" target="_blank">Youtube</a>')
         if (typeof LikeBtn != 'undefined'){
             LikeBtn.initWrappers();
             LikeBtn.loadBunch();
