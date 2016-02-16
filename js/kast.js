@@ -15,7 +15,7 @@
         statsPath: 'stats', // Path to stats @string
         playedPath: 'played', // Path to played @string
         ui: 'transparent', // Transparent or colored and kast-nowplaying @string
-        theme: 'dynamic', // Dark, light or dynamic: based on the current album artwork @string
+        theme: 'dark', // Dark, light or dynamic: based on the current album artwork @string
         colors: {
             primary: 'cyan', // Material Design primary color - Material name @string
             accent: 'yellow' // Material Design accent color - Material name @string
