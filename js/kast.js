@@ -918,7 +918,7 @@
             var html = '';
             html += '<div id="kast" class="kast-recss kast-' + ot.theme + ' kast-' + ot.ui + ' ' + primaryColor + ' ' + accentColor + ' ' + dynamicColors + ' kast-' + ot.startTemplate + ' kast-' + ot.position + ' ' + ultra + ' ' + notFullBar + played + ' ' + container + ' ' + dynamicTheme + '">'
             html += '<div id="kast-wrapper">';
-            html += statusBarHtml; // isn't better than appending it later ?
+            // html += statusBarHtml; // isn't better than appending it later ?
             html += '<div id="kast-top" class="kast-default-art">';
             html += '<div class="kast-album-wrapper"><i class="kast-mdi kast-mdi-album"></i></div>';
             html += '<div id="kast-top-content" class="kast-top-content">';
