@@ -196,7 +196,7 @@
                         <div class="column is-left is-7 content column-right">
                             <h3 class="title is-4">Как услышать Муравья?</h3>
                             <dl>
-                                <li><strong>На комьтерах:</strong>
+                                <li><strong>На компьютерах:</strong>
                                     <dl>
                                         <li>через приложение Radium <a href="http://radium.me/m/tune-in/?b=moonant&c=1&pb=Радио%20Лунный%20Муравей&pc=Радио%20Лунный%20Муравей&h=&" target="_blank" class="button is-small">Radium Mac OSX</a> </li>
                                         <li>Winamp или iTunes <a href="http://s25.myradiostream.com:12650/listen.pls" target="_blank" class="button is-small">*.pls</a></li>
@@ -213,11 +213,31 @@
                                 <hr/>
                             </dl>
                             <p>Присоединяйтесь к сообществам Лунного Муравья</p>
-                            <p><a href="https://www.youtube.com/channel/UCfUTABZP2Yz8wLTY5h78Vcg" target="_blank" class="button is-primary"><i class="fa fa-youtube"></i>Канал на Youtube</a>
-                            <a href="#youtube" class="button is-primary"><i class="fa fa-vk"></i>/moonant</a>
-                            <a href="#youtube" class="button is-primary"><i class="fa fa-twitter"></i>@moonant_radio</a></p>
+                            <p>
+                                <a href="https://www.youtube.com/channel/UCfUTABZP2Yz8wLTY5h78Vcg" target="_blank" class="button is-primary"><i class="fa fa-youtube"></i>Канал на Youtube</a>
+                                <a href="#youtube" class="button is-primary"><i class="fa fa-vk"></i>/moonant</a>
+                                <a href="#youtube" class="button is-primary"><i class="fa fa-twitter"></i>@moonant_radio</a>
+                            </p>
+                            <p>или <a id="displayComments" href="javascript:toggle2();" class="button">оставьте комментарий</a> на сайте</p>
                         </div>
                     </div>
+                    <div class="columns">
+                            <div id="toggleComments" class="column is-12 is-left" style="display: none">
+                                <div id="disqus_thread"></div>
+                                    <script>
+                                    var disqus_config = function () {
+                                    this.page.identifier = VE_002;
+                                    };
+                                    (function() {
+                                    var d = document, s = d.createElement('script');
+                                    s.src = '//moon-ant.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                    })();
+                                    </script>
+                                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                            </div>
+                        </div>
                 </div>
             </div>
           </div>
