@@ -50,16 +50,3 @@ function toggle() {
         text.innerHTML = "Закрыть обсуждение";
     }
 }
-
-function toggle2() {
-    var elem = document.getElementById("toggleComments");
-    var tex = document.getElementById("displayComments");
-    if(elem.style.display == "block") {
-        elem.style.display = "none";
-        tex.innerHTML = "оставьте комментарий";
-    }
-    else {
-        elem.style.display = "block";
-        tex.innerHTML = "закрыть комментарии";
-    }
-}
