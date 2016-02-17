@@ -190,9 +190,13 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 	right: 120px;
 }
 
-#kast {
+#kast, #kast.kast-transparent.kast-current {
 	box-shadow: none;
 	height: 388px;
+}
+
+i.kast-mdi.kast-mdi-play {
+	box-shadow: none;
 }
 
 #kast-top {
