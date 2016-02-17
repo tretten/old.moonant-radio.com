@@ -181,10 +181,6 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 
 /*_Player*/
 
-/*.player, #kast-wrapper, #kast.kast-transparent.kast-current, div#kast-top.kast-default-art {
-	min-height: 388px;
-}*/
-
 transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar.kast-current.kast-custom-container.kast-offline {
 	z-index: 9;
 }
@@ -196,11 +192,13 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 
 #kast {
 	box-shadow: none;
+	height: 388px;
 }
 
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
+	height: 388px;
 }
 
 #kast-np-title {
