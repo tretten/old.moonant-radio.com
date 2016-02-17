@@ -92,6 +92,10 @@ hr {
 	color: #444;
 }
 
+div.column.is-5.column-player {
+	padding: 0;
+}
+
 .box .column-player {
 	background: rgba(255,255,255,0.9);
 	z-index: 1;
@@ -191,7 +195,7 @@ transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar
 
 #kast, #kast.kast-transparent.kast-current {
 	box-shadow: none;
-	height: 388px;
+	height: 408px;
 }
 
 i.kast-mdi.kast-mdi-play {
@@ -201,7 +205,7 @@ i.kast-mdi.kast-mdi-play {
 #kast-top {
 	background-position: center top;
 	background-image: url(../img/cover.jpg);
-	height: 388px;
+	height: 408px;
 }
 
 #kast-np-title {
