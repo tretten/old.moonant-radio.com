@@ -26,7 +26,7 @@
         autoPlay: false, // Autoplay radio on load @boolean
         autoUpdate: true, // Autoupdate (Boolean or string: 'all') (current info / Played info / album artwork) @boolean @string
         artwork: true, // Pull album artwork (or artist artwork as a fallback) from Spotify API or set a custom one @boolean @array
-        statusBar: true, // Show status bar at the top @boolean
+        statusBar: false, // Show status bar at the top @boolean
         minimizeMaximize: false, // Show minimize/maximize button in status bar @boolean
         muteUnmute: false, // Show mute/unmute button in status bar
         startMuted: false, // Start audio muted on load @boolean

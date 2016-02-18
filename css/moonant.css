@@ -185,7 +185,7 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 /*_Player*/
 
 transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar.kast-current.kast-custom-container.kast-offline {
-	z-index: 9;
+	z-index: 1;
 }
 
 .kast-transparent.kast-current #kast-play {
@@ -216,19 +216,15 @@ i.kast-mdi.kast-mdi-play {
 	padding-top: 15px;
 }
 
-#kast-top-content {
+/*#kast-top-content {
 	background: rgba(255, 255, 255, 0.4);
-}
+}*/
 
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
 	width: 100%;
 }
 i.kast-mdi-album:before {
 	content: none;
-}
-
-i.kast-mdi.kast-mdi-album {
-	background-image: 
 }
 
 #kast-bar {
