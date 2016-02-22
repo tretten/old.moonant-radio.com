@@ -9,6 +9,7 @@ html {
 
 body, button, input, select, textarea {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background: url(../img/moonant-pattern.svg) top center;
 }
 
 a {
@@ -134,10 +135,13 @@ h4.episode {
 }
 
 img.sunday-live {
-	width: 128px;
-	height: 128px;
-	margin: 30px 0 50px;
-	border-radius: 50%;
+	width: 100%;
+	height: auto;
+	margin: 10px 0 0;
+}
+
+audio.sunday-live {
+	width: 100%;
 }
 
 .button.intext {
