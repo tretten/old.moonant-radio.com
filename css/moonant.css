@@ -223,6 +223,15 @@ i.kast-mdi.kast-mdi-play {
 #kast.kast-transparent.kast-current, .kast-album-wrapper, #kast-wrapper, #kast-top {
 	width: 100%;
 }
+
+div#kast-top-content.kast-top-content {
+	background: rgba(255,255,255,0.8)!important;
+}
+
+p#kast-np-artist, p#kast-np-title {
+	color: rgba(0, 0, 0, .87);
+}
+
 i.kast-mdi-album:before {
 	content: none;
 }
