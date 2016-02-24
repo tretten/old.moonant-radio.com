@@ -41,6 +41,14 @@ hr {
   margin-top: 1.5em;
 }
 
+a[href^="http"]:empty::before {
+  content: attr(href);
+}
+
+a[href]:not([class]) {
+  text-decoration: none;
+}
+
 .content ul {
 	list-style: circle;
 	margin: 0.5em 2em 1em;
