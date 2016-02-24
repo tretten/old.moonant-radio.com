@@ -37,6 +37,10 @@ hr {
 	margin-top: 30px;
 }
 
+* + * {
+  margin-top: 1.5em;
+}
+
 .content ul {
 	list-style: circle;
 	margin: 0.5em 2em 1em;
