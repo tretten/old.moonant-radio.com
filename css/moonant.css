@@ -57,6 +57,10 @@ hr {
 	margin-top: 0.5em;
 }
 
+.is-lh {
+	line-height: 2em;
+}
+
 .title {
 	color: white;
 }
