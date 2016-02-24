@@ -34,7 +34,7 @@ strong {
 }
 
 hr {
-	margin-top: 30px;
+
 }
 
 * + * {
@@ -95,7 +95,6 @@ a[href]:not([class]) {
 
 .button.is-primary {
 	background: #00a8ab;
-	margin-bottom: 10px;
 }
 
 .button.is-primary:hover, .button.is-primary:focus {
