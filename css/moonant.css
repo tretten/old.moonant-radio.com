@@ -210,8 +210,8 @@ audio.sunday-live {
 }
 
 .footer .play-bar a i:hover {
-	background: #d3d6db;
-	color: #fff;
+	background: #fff;
+	color: #00a8ab;
 }
 
 .footer .play-bar a i:active {
@@ -221,7 +221,7 @@ audio.sunday-live {
 
 .footer .play-title {
 	line-height: 45px;
-	overflow: hidden;
+	overflow-x: hidden;
 	margin-left: 10px
 }
 
