@@ -190,10 +190,6 @@ audio.sunday-live {
 	padding-top: 10px;
 }
 
-.footer:hover {
-	background: rgba(255,255,255,1);
-}
-
 .footer .play-bar {
 	border-left: 1px solid #d3d6db;
 	border-right: 1px solid #d3d6db;
@@ -209,7 +205,7 @@ audio.sunday-live {
 	line-height: 62px;
 }
 
-.footer .play-bar a i:hover {
+.footer:hover .play-bar a i {
 	background: #fff;
 	color: #00a8ab;
 }
@@ -229,6 +225,10 @@ audio.sunday-live {
 	margin-bottom: 5px;
 	font-size: 10px;
 	text-transform: uppercase;
+}
+
+.footer:hover #nowplay-share {
+	background: #fff;
 }
 
 /*_YShare */
