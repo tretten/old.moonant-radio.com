@@ -221,14 +221,14 @@ audio.sunday-live {
 	margin-left: 10px
 }
 
+.footer:hover .play-title {
+	background: #fff;
+}
+
 .footer #nowplay-share h6 {
 	margin-bottom: 5px;
 	font-size: 10px;
 	text-transform: uppercase;
-}
-
-.footer:hover #nowplay-share {
-	background: #fff;
 }
 
 /*_YShare */
