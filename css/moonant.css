@@ -304,3 +304,7 @@ i.kast-mdi-album:before {
 .likebtn-wrapper {
 	line-height: 10px !important;
 }
+
+.lb-like .lb-a, .lb-dislike .lb-a {
+	color: #d3d6db;
+}
