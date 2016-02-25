@@ -182,18 +182,53 @@ audio.sunday-live {
 /*_Footer*/
 .footer {
 	position: fixed;
-	height: 52px;
+	height: 60px;
 	background: rgba(255,255,255,0.9);
 	z-index: 900;
 	bottom: 0px;
-	-webkit-transition: ease-out all 0.5s;
-	transition: ease-out all 0.5s;
-	padding: 15px 0 35px 0;
+	padding: 0;
+	padding-top: 10px;
 }
-
 
 .footer:hover {
 	background: rgba(255,255,255,1);
+}
+
+.footer .play-bar {
+	border-left: 1px solid #d3d6db;
+	border-right: 1px solid #d3d6db;
+	height: 60px;
+}
+
+.footer .play-bar a i {
+	margin: -10px;
+	padding: 0;
+	width: calc(100%+20px);
+	height: 60px;
+	display: block;
+	line-height: 62px;
+}
+
+.footer .play-bar a i:hover {
+	background: #d3d6db;
+	color: #fff;
+}
+
+.footer .play-bar a i:active {
+	background: #00a8ab;
+	color: #fff;
+}
+
+.footer .play-title {
+	line-height: 45px;
+	overflow: hidden;
+	margin-left: 10px
+}
+
+.footer #nowplay-share h6 {
+	margin-bottom: 5px;
+	font-size: 10px;
+	text-transform: uppercase;
 }
 
 /*_YShare */
@@ -203,6 +238,10 @@ ul.ya-share2__list.ya-share2__list_direction_horizontal {
 }
 
 /*_Player*/
+
+#kast-play {
+	box-shadow: none;
+}
 
 transparent.kast-colors-dynamic.kast-maximized.kast-left.kast-not-full-statusbar.kast-current.kast-custom-container.kast-offline {
 	z-index: 1;

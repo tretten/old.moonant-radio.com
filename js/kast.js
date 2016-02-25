@@ -853,11 +853,11 @@
         req.timeout = op.timeout || 3000;
         req.open('GET', op.url, true);
         req.send();
-        
+
         // Global it, so I could abort any active requests when I destroy Kast
         window.kastXHR = req
     }
-    
+
     // -- Remove brackets + Remove invaild characters
     var chaRe = function (strie) {
         return strie.replace(/(\[.*?\]|\(.*?\))/g, '').replace(/[|&^'`;:$%@"#<>+,]/g, '')
@@ -914,7 +914,7 @@
                 playedHtml = '<div id="kast-bottom" class="kast-clearfix"><p>' + ot.language.playedText + '</p><ul id="kast-playedlist" class="kast-clearfix"></ul><div>';
             }
 
-            // -- Kast HTML  
+            // -- Kast HTML
             var html = '';
             html += '<div id="kast" class="kast-recss kast-' + ot.theme + ' kast-' + ot.ui + ' ' + primaryColor + ' ' + accentColor + ' ' + dynamicColors + ' kast-' + ot.startTemplate + ' kast-' + ot.position + ' ' + ultra + ' ' + notFullBar + played + ' ' + container + ' ' + dynamicTheme + '">'
             html += '<div id="kast-wrapper">';
@@ -983,7 +983,7 @@
 
 
 
-            // -- Binding (addEventListener isn't necessary, beside onclick is extremely fast)           
+            // -- Binding (addEventListener isn't necessary, beside onclick is extremely fast)
             document.getElementById('kast-play').onclick = function () {
                 if (this.className.indexOf('paused') !== -1) {
                     that.play()
@@ -1019,8 +1019,8 @@
 
             // -- Finally
             ot.autoPlay && that.play();
-            ot.startMuted && that.mute();          
-            
+            ot.startMuted && that.mute();
+
 
 
             return this;
@@ -1028,7 +1028,7 @@
         play: function (reload) {
             // -- Play the radio
             // -- addClass/removeClass
-            
+
             var k = document.getElementById('kast'),
                 kP = document.getElementById('kast-play');
             if (classL) {
@@ -1158,11 +1158,11 @@
             var processStats = function (data) {
                 // -- Mutual data for current track/artist and current artist artwork
                 var songTitle, currentTrack, currentArtist;
-                
+
                 var unTrack = ot.language.unknownTrackText,
                     unArtist = ot.language.unknownArtistText;
-                
-                try { 
+
+                try {
                     songTitle = (ot.version === 2) ? data.getElementsByTagName('SONGTITLE')[0].textContent : data.body.textContent.split(',')[6]; // V2 || V1
                 } catch(e) { // aka 'error'
                     songTitle = unArtist + ' - ' + unTrack;
@@ -1254,7 +1254,7 @@
                             if ((ot.theme === 'dynamic' || ot.colors === 'dynamic') && XHR2Blob) {
 
                                 // -- Golden method for getting colors from XHR images
-                                // ** other methods: http://jsfiddle.net/manarkamel/bmvqavjf/                            
+                                // ** other methods: http://jsfiddle.net/manarkamel/bmvqavjf/
                                 XHR({
                                     url: imgLite,
                                     arraybuffer: true,
@@ -1342,7 +1342,7 @@
                     })
                 }
 
-                ot.onCurrentInfo(currentTrack, currentArtist) // Event 
+                ot.onCurrentInfo(currentTrack, currentArtist) // Event
             };
 
             if (typeof callback === 'object') {
@@ -1384,7 +1384,7 @@
                                     kast.setAttribute('data-offline', 'true')
                                     ot.onOffline();
                                 }
-                                
+
                                 // ** ** If empty add unknown
                                 if (!kastNT.hasChildNodes()) {
                                     processStats('error')
@@ -1425,7 +1425,7 @@
                         songsFrag = document.createDocumentFragment(),
                         unTrack = ot.language.unknownTrackText,
                         unArtist = ot.language.unknownArtistText;
-                
+
                     try {
                         song = data.getElementsByTagName('SONG');
                         songL = song.length;
@@ -1436,14 +1436,14 @@
                     var processPL = function (j, song, songL, songsFrag) {
 
                         var playedTrack, playedArtist, title;
-                        
+
                         try {
                             title = song[j].getElementsByTagName('TITLE')[0].textContent;
                         } catch(e) {
                             title = unArtist + ' - ' + unTrack;
                         }
-                        
-                        
+
+
                         if (ot.playedTracks) {
                             playedTrack = title.split(' - ')[1] || title || unTrack;
                         }
@@ -1541,20 +1541,20 @@
 
             return this
         },
-        autoUpdate: function (uKey) {            
+        autoUpdate: function (uKey) {
             var that = this,
                 ot = that.opt;
-            
+
             // -- Cached selectors
             var kast = document.getElementById('kast'),
                 kastServer = document.getElementById('kast-server'),
                 kastPlay = document.getElementById('kast-play'),
                 kastC;
-            
+
             if(classL) {
                 kastC = kast.classList;
             }
-            
+
             // -- Turn off
             if(!uKey) {
                 clearInterval(kast.getAttribute('data-interval'))
@@ -1604,16 +1604,16 @@
                             }
 
                         }
-                        
-                        
+
+
                         // ** When offline->online back again, we call play() again
                         // ** and there's bug in some SHOUTcast servers (AAC+) or maybe in Chrome,
                         // ** sometimes the audio goes off for no reason,
                         // ** so in order to play, we need to pause->play to play audio,
-                        // ** that's no longer necessary 
+                        // ** that's no longer necessary
                         isPlaying && that.play();
 
-                        // -- update server info 
+                        // -- update server info
                         if (uKey === 'all') {
                             var sI = ot.serverInfo,
                                 sB = ot.statusBar;
@@ -1678,7 +1678,7 @@
             if (that.mobile) {
                 timeMS = (that.mobileMedium) ? 16000 : 12000;
             }
-            
+
             setTimer(checker, timeMS)
 
             return this
@@ -1723,7 +1723,7 @@
                             imgLarge = null,
                             imgSmall = null;
 
-                        if (data.artists.items[0].images.length === 4) { // ** Not normal artist images                       
+                        if (data.artists.items[0].images.length === 4) { // ** Not normal artist images
                             if (that.mobileMedium) { // ** Mobile first :)
                                 imgLarge = imagesArrayA[2].url || ''; // ** Medium quailty
                             } else {
@@ -1796,12 +1796,12 @@
             return this
         },
         destroy: function () {
-            // -- Destroy the plugin     
+            // -- Destroy the plugin
             window.kastXHR && window.kastXHR.abort(); // Terminate any active XHR
-            
+
             this.autoUpdate(false); // Clear AutoUpdate data
             this.audio.pause(); // Pause audio
-            
+
             $.data(document.body, 'plugin_kast', null); // Clear Kast data
             var k = document.getElementById('kast');
             k && k.parentNode.removeChild(k) // Remove Kast element
