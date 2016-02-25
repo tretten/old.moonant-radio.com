@@ -205,7 +205,7 @@ audio.sunday-live {
 	line-height: 62px;
 }
 
-.footer:hover .play-bar a i {
+.footer .play-bar a i:hover {
 	background: #fff;
 	color: #00a8ab;
 }
