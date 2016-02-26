@@ -45,8 +45,7 @@ function toggle() {
     if(ele.style.display == "block") {
         ele.style.display = "none";
         text.innerHTML = "Обсудить..";
-    }
-    else {
+    } else {
         ele.style.display = "block";
         text.innerHTML = "Закрыть обсуждение";
     }

@@ -249,9 +249,22 @@
 
         <!-- Вызов плеера -->
         <script type="text/javascript">
-            $(document).ready(function() { $.kast({colors: 'dynamic',container: '#player'}) } );
-            $('.play').click( function() { $.kast('play'); $(this).hide(); $('.pause').show(); return false; } );
-            $('.pause').click( function() { $.kast('pause'); $(this).hide(); $('.play').show(); return false; } );
+            $(document).ready(function() {
+                $.kast({
+                    colors: 'dynamic',
+                    container: '#player',
+                    onPlay: function(){
+                        $('.play').hide();
+                        $('.pause').show();
+                    },
+                    onPause: function(){
+                        $('.play').show();
+                        $('.pause').hide();
+                    }
+                })
+            } );
+            $('.play').click( function() { $.kast('play'); return false; } );
+            $('.pause').click( function() { $.kast('pause'); return false; } );
         </script>
         <!-- Likes -->
         <script type="text/javascript">(function(w,doc) {
