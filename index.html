@@ -56,6 +56,7 @@
                 <div class="columns">
                     <div class="column is-1 play-bar">
                         <a href="#" class="play"><i class="fa fa-play"></i></a>
+                        <a href="#" class="pause"><i class="fa fa-pause"></i></a>
                     </div>
                     <div class="column is-left play-title">
                         <p id="nowplay"> </p>
@@ -249,7 +250,8 @@
         <!-- Вызов плеера -->
         <script type="text/javascript">
             $(document).ready(function() { $.kast({colors: 'dynamic',container: '#player'}) } );
-            $('.play').click( function() { $.kast('play'); return false; } );
+            $('.play').click( function() { $.kast('play'); $(this).hide(); $('.pause').show(); return false; } );
+            $('.pause').click( function() { $.kast('pause'); $(this).hide(); $('.play').show(); return false; } );
         </script>
         <!-- Likes -->
         <script type="text/javascript">(function(w,doc) {

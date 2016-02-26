@@ -7,7 +7,7 @@ function myWrite(msg){
         if (typeof LikeBtn != 'undefined'){
             LikeBtn.initWrappers();
             LikeBtn.loadBunch();
-            }
+        }
         // console.log(msg);
         current_song = msg;
     }

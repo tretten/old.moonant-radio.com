@@ -40,7 +40,7 @@
         language: {
             offlineText: 'Temporarily Offline', // On offline: status bar text @string
             playedText: 'Played', // Played title (player bottom) @string
-            unknownTrackText: 'Копмозиция', // Set unknown track text when error
+            unknownTrackText: 'Композиция', // Set unknown track text when error
             unknownArtistText: 'Исполнитель' // Set unknown artist text when error
         }, // Set text (Multi language support) @object
         mobileCare: false, // low (aka true), medium, high, very high, ultra @boolean @array
