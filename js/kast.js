@@ -926,8 +926,8 @@
             html += '<div id="kast-linear"></div>';
             html += '</div>';
             html += '<div id="kast-play" class="kast-paused">';
-            html += '<i class="fa fa-play">';
-            html += '<i class="fa fa-pause">';
+            html += '<i class="fa fa-play"></i>';
+            html += '<i class="fa fa-pause"></i>';
             html += '</div></div>' + playedHtml + '</div></div>';
 
             document.querySelector(ot.container).insertAdjacentHTML("beforeend", html); // DOM access: Insert last
